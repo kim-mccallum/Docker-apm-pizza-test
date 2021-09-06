@@ -17,6 +17,9 @@ services:
     restart: always
     volumes:
       - mysql-data:/var/lib/mysql
+    # TRY TO PUT CREDENTIALS IN HIDDEN ENV FILE
+    env_file: 
+      - ./env/mysql.env
   
   adminer:
     image: adminer
