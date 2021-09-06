@@ -1,6 +1,5 @@
 Simple sample Docker thing to create an Apache/PHP/MySQL
-application. Mostly a proof of concept before I tear into bigger
-and better things.
+application. Just a proof of concept as I am learning docker-compose.
 
 Before building/running, edit passwords in mysql/Dockerfile. Then:
 
