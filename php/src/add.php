@@ -40,9 +40,9 @@
 			//echo 'errors in form';
 		} else {
             // this function protects you from malicious SQL injection
-			$email = mysqli_real_escape_string($conn, $_POST[email]);
-			$title = mysqli_real_escape_string($conn, $_POST[title]);
-			$ingredients = mysqli_real_escape_string($conn, $_POST[ingredients]);
+			$email = mysqli_real_escape_string($conn, $_POST["email"]);
+			$title = mysqli_real_escape_string($conn, $_POST["title"]);
+			$ingredients = mysqli_real_escape_string($conn, $_POST["ingredients"]);
 
             // create SQL query
             $sql = "INSERT INTO pizzas (title, email, ingredients) VALUES('$title', '$email', '$ingredients')";
