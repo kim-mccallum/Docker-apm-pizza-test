@@ -1,0 +1,29 @@
+version: "3"
+services:
+  php:
+    build:
+      context: ./php/
+      dockerfile: Dockerfile
+    ports:    
+      - 8000:80
+    volumes:
+      - ./php/src:/var/www/html/
+  
+  db:
+    build:
+      context: ./mysql/
+    ports:
+      - 3306:3306
+    restart: always
+    volumes:
+      - mysql-data:/var/lib/mysql
+  
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+  
+volumes:
+  mysql-data:
+
