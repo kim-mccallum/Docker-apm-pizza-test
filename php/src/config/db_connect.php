@@ -1,11 +1,5 @@
 <?php 
-    // $conn = mysqli_connect('localhost', 'kimchi', 'pass123', 'ninja_pizza');
-    // $conn = mysqli_connect('localhost', 'testing', 'testing', 'testing');
-    // // test connection
-    // if(!$conn){
-    //     echo 'Connection error: ' . mysqli_connect_error();
-    // };
-
+    // Figure out how to get these from environment variables. 
     $conn = new mysqli("db", "testing", "testing", "testing");
 
     if ($conn->connect_errno) {

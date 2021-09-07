@@ -1,4 +1,4 @@
-Simple sample Docker thing to create an Apache/PHP/MySQL
+Simple sample Docker template from a friend to create an Apache/PHP/MySQL
 application. Just a proof of concept as I am learning docker-compose.
 
 Before building/running, edit passwords in mysql/Dockerfile. Then:
